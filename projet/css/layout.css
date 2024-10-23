@@ -1,0 +1,53 @@
+#app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #313131;
+
+}
+
+
+
+.album {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-content: left;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.current-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+li>p {
+    display: flex;
+    justify-content: left;
+}
+
+#secondes {
+    display: flex;
+    justify-content: right;
+    align-items: start;
+}
+
+.current {
+    display: flex;
+    width: 80%;
+}

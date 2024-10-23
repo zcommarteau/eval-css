@@ -1,0 +1,112 @@
+/* ----------------------------------------------------------------------
+    @@@ Général
+---------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+/* Tous les liens de l'app ont un padding afin d'augmenter la taille de la zone réactive */
+a {
+    color: currentColor;
+    display: inline-block;
+    padding: 10px;
+    transition: color 400ms ease-in-out;
+}
+a:hover {
+    color: rgb(32, 192, 255);
+}
+/* ----------------------------------------------------------------------
+    @@@ Layout
+---------------------------------------------------------------------- */
+.app-wrapper {
+    height: 100vh;
+    background: lime;
+}
+.app-top {
+    background: yellow;
+}
+.app-bottom {
+    background: blue;
+    color: #fff;
+    padding: 20px;
+}
+/* ----------------------------------------------------------------------
+    @@@ Sidebar
+---------------------------------------------------------------------- */
+.app-nav {
+    width: 50px;
+    background: red;
+    color: #fff;
+}
+/* ----------------------------------------------------------------------
+    @@@ Partie album + tracklist
+---------------------------------------------------------------------- */
+.app-content {
+    background: yellow;
+}
+/* ----------------------------------------------------------------------
+    @@@ Partie album
+---------------------------------------------------------------------- */
+.app-content .album {
+    background: purple;
+    padding: 20px;
+}
+.app-content .cover {
+    margin-right: 20px;
+}
+.app-content .album-infos {
+    color: white;
+}
+.app-content .album-infos h1 {
+    font-size: 3em;
+}
+/* ----------------------------------------------------------------------
+    @@@ Partie tracklist
+---------------------------------------------------------------------- */
+.app-content .tracklist {
+    background: violet;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.app-content .track-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 0.8em;
+    transition: color 400ms ease-in-out;
+}
+.app-content .track-item:hover {
+    color: rgb(32, 192, 255);
+    cursor: pointer;
+}
+.app-content .tracklist p {
+    margin: 0;
+    padding: 10px;
+}
+/* ----------------------------------------------------------------------
+    @@@ Partie Player : lecture en cours + controls
+---------------------------------------------------------------------- */
+.app-bottom .current {
+    background: darkblue;
+}
+.app-bottom .current-details {
+    margin-left: 20px;
+}
+.app-bottom .author {
+    font-size: 0.8em;
+    margin: 0;
+}
+.app-bottom .track {
+    color: rgb(32, 192, 255);
+    margin: 0 0 10px;
+}
+.app-bottom .controls {
+    width: 30%;
+    background: cornflowerblue;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
